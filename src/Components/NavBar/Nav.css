@@ -1,33 +1,37 @@
 .Navbar {
-  background-color: #023047ff;
-  background-image: url("../../Images/navbg.svg");
+  font-family: "poppins", sans-serif;
+}
+
+.Navbar .NavBg {
+  display: flex;
+  /* background-color: #023047ff;
+  background-image: url("../../Images/navbg.svg"); */
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 80px;
-  font-family: "poppins", sans-serif;
-
-  display: flex;
+  height: 50px;
+  opacity: 0.8;
 }
 
 .Navbar .LeftSide {
   flex: 50%;
 }
 .Navbar .LeftSide .Logo {
-  max-height: 70px;
+  max-height: 50px;
   padding-left: 30px;
   display: flex;
   align-items: center;
+  justify-content: right;
 }
 .Navbar .LeftSide .Logo img {
-  max-height: 70px;
+  max-height: 50px;
 }
 
 .Navbar .RightSide {
   flex: 50%;
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: left;
   padding-right: 50px;
   transition: 850ms;
 }
@@ -38,9 +42,10 @@
 
 .Navbar .RightSide .Links a {
   text-decoration: none;
-  color: white;
+  color: black;
   margin-left: 20px;
-  font-size: 25px;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 .Navbar .RightSide .Burger {
   display: none;
@@ -53,7 +58,7 @@
   .Navbar .RightSide .Burger {
     display: flex;
     max-height: 80px;
-    color: white;
+    color: black;
     font-size: large;
     cursor: pointer;
     justify-content: right;
@@ -63,7 +68,7 @@
     display: none;
   }
   .Navbar .RightSide .Links a {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .Navbar .RightSide {
@@ -79,10 +84,11 @@
   .Navbar .RightSide #hidden {
     position: absolute;
     left: 0px;
-    top: 80px;
-    height: 230px;
+    top: 50px;
+    height: 200px;
     width: 100%;
-    background-color: #023047ff;
+    background-color: white;
+    opacity: 0.4;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -96,7 +102,7 @@
       opacity: 0;
     }
     100% {
-      opacity: 1;
+      opacity: 0.4;
     }
   }
 }
