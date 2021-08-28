@@ -1,0 +1,39 @@
+.Hero {
+  width: 100vw;
+  height: 900px;
+  font-family: "poppins", sans-serif;
+  /* margin-top: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+  background-image: url("../../Images/HeroBG.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 80px;
+}
+
+h1 {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  animation: fade 5s linear;
+}
+
+p {
+  display: flex;
+  max-width: 600px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+  p {
+    padding: 10px;
+  }
+}
+
+/* --blue-green: #5c98abff;
+--prussian-blue: #023047ff;
+--forest-green-web: #0e9119ff;
+--honey-yellow: #ffb703ff;
+--orange: #fb8500ff; */
