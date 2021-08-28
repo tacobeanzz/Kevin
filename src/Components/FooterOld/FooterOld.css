@@ -1,0 +1,76 @@
+.Footer {
+  font-family: "poppins", sans-serif;
+  background-color: rgb(12, 82, 117);
+  height: 230px;
+  width: auto;
+  display: flex;
+  align-items: top;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.FooterMenu {
+  display: flex;
+  flex-direction: column;
+  /* background-color: blueviolet; */
+  height: 200px;
+  width: 200px;
+  align-items: center;
+  justify-content: top;
+}
+
+.FooterMenu a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.FooterMenu a:hover {
+  color: black;
+  transition: all ease-in-out 0.4s;
+}
+
+.FLeft {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 200px;
+  /* background-color: aquamarine; */
+  align-items: center;
+  justify-content: top;
+}
+
+.FLeft h1 {
+  font-size: 25px;
+}
+.FLeft p {
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 10px;
+}
+
+/* .FRight {
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+} */
+
+@media only screen and (max-width: 650px) {
+  .Footer {
+    padding: 20px;
+  }
+}
+
+colors {
+  --blue-green: #5c98abff;
+  --prussian-blue: #023047ff;
+  --forest-green-web: #0e9119ff;
+  --honey-yellow: #ffb703ff;
+  --orange: #fb8500ff;
+}
