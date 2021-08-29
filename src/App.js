@@ -1,16 +1,25 @@
 import "./App.css";
-import Footer from "./Components/FooterNew/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/NavBar/Navbar";
+import Footer from "./Components/FooterNew/Footer";
+import home from "./Pages/home";
+import aboutpage from "./Pages/aboutpage";
+import NotFound from "./Pages/NotFound";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Hero />
-      <Footer />
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={home} />
+          <Route path="/about" component={aboutpage} />
+          <Route component={NotFound} />
+        </Switch>
+        <Footer />
+      </Router>
     </div>
   );
 }

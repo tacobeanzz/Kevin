@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Nav.css";
+import { Link } from "react-router-dom";
+
 import Logo from "../../Images/K_Logo1.png";
 import MenuIcon from "@material-ui/icons/MenuRounded";
 
@@ -10,14 +12,14 @@ function Navbar() {
       <div className="NavBg">
         <div className="LeftSide">
           <div className="Logo">
-            <a href="/home">
+            <Link to="/">
               <img src={Logo} alt="" />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="RightSide">
           <div className="Links" id={showLinks ? "hidden" : ""}>
-            <a href="/">About</a>
+            <Link to="/about">About</Link>
             <a href="/">Portfolio</a>
             <a href="/">Contact Me</a>
           </div>
