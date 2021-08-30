@@ -14,6 +14,8 @@
 
 .Navbar .LeftSide {
   flex: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
 .Navbar .LeftSide .Logo {
   max-height: 50px;
