@@ -26,6 +26,8 @@
 }
 .Navbar .LeftSide .Logo img {
   max-height: 50px;
+  will-change: transform;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .Navbar .RightSide {
