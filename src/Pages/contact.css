@@ -1,0 +1,9 @@
+.CBody {
+  margin-top: 80px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  font-family: "poppins", sans-serif;
+}

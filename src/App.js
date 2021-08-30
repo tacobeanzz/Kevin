@@ -7,6 +7,8 @@ import Footer from "./Components/FooterNew/Footer";
 import home from "./Pages/home";
 import aboutpage from "./Pages/aboutpage";
 import NotFound from "./Pages/NotFound";
+import contact from "./Pages/contact";
+import portfolio from "./Pages/portfolio";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={home} />
           <Route path="/about" component={aboutpage} />
+          <Route path="/contact" component={contact} />
+          <Route path="/portfolio" component={portfolio} />
           <Route component={NotFound} />
         </Switch>
         <Footer />

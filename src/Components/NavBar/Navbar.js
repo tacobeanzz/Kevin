@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Nav.css";
 import { Link } from "react-router-dom";
 
-import Logo from "../../Images/K_Logo1.png";
+import Logo from "../../Images/K_LogoWhite.png";
 import MenuIcon from "@material-ui/icons/MenuRounded";
 
 function Navbar() {
@@ -20,8 +20,8 @@ function Navbar() {
         <div className="RightSide">
           <div className="Links" id={showLinks ? "hidden" : ""}>
             <Link to="/about">About</Link>
-            <a href="/">Portfolio</a>
-            <a href="/">Contact Me</a>
+            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/contact">Contact Me</Link>
           </div>
           <div className="Burger">
             <MenuIcon

@@ -10,23 +10,28 @@ const Footer = () => {
           <div className="col">
             <h4>Kevin McK</h4>
             <ul className="list-unstyled">
-              <li>Phone</li>
-              <li>address 1</li>
-              <li>address 2</li>
-              <li>address 3</li>
+              <li>P# 012-123-1234</li>
+              <li>-</li>
+              <li>123 street</li>
+              <li>Some Town</li>
+              <li>Some City</li>
             </ul>
           </div>
           <div className="col">
             <h4>Links</h4>
             <ul className="list-unstyled">
-              <Link to="/">
+              <Link className="FLinka" to="/">
                 <li>Home</li>
               </Link>
-              <Link to="/about">
+              <Link className="FLinka" to="/about">
                 <li>About</li>
               </Link>
-              <li>Portfolio</li>
-              <li>Contact Me</li>
+              <Link className="FLinka" to="/portfolio">
+                <li>Portfolio</li>
+              </Link>
+              <Link className="FLinka" to="/contact">
+                <li>Contact Me</li>
+              </Link>
             </ul>
           </div>
           <div className="col">

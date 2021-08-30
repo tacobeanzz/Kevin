@@ -1,10 +1,10 @@
 import React from "react";
-import "./aboutpage.css";
+import "./portfolio.css";
 
 const aboutpage = () => {
   return (
-    <div className="ABody">
-      <h1>About Page</h1>
+    <div className="PBody">
+      <h1>Portfolio</h1>
     </div>
   );
 };

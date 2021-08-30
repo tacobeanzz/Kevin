@@ -1,10 +1,10 @@
 import React from "react";
-import "./aboutpage.css";
+import "./contact.css";
 
 const aboutpage = () => {
   return (
-    <div className="ABody">
-      <h1>About Page</h1>
+    <div className="CBody">
+      <h1>Contact Me</h1>
     </div>
   );
 };

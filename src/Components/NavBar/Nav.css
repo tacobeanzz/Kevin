@@ -4,8 +4,7 @@
 
 .Navbar .NavBg {
   display: flex;
-  /* background-color: #023047ff;
-  background-image: url("../../Images/navbg.svg"); */
+  background-color: #000;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
@@ -42,7 +41,7 @@
 
 .Navbar .RightSide .Links a {
   text-decoration: none;
-  color: black;
+  color: rgb(231, 231, 231);
   margin-left: 20px;
   font-size: 20px;
   text-transform: uppercase;
@@ -63,7 +62,7 @@
   .Navbar .RightSide .Burger {
     display: flex;
     max-height: 80px;
-    color: black;
+    color: white;
     font-size: large;
     cursor: pointer;
     justify-content: right;
@@ -74,6 +73,7 @@
   }
   .Navbar .RightSide .Links a {
     font-size: 15px;
+    color: black;
   }
 
   .Navbar .RightSide {
